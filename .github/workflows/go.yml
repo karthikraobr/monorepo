@@ -20,7 +20,7 @@ jobs:
         go-version: 1.15
 
     - name: Build
-      working-directory: "app/server/*"
+      working-directory: "app/server"
       run: go build -v ./...
 
     - name: Test
