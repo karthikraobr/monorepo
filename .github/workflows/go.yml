@@ -21,6 +21,7 @@ jobs:
         go-version: 1.15
 
     - name: Build
+      working-directory: $({push.path})
       run: go build -v ./...
 
     - name: Test
