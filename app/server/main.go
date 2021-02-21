@@ -10,6 +10,6 @@ import (
 func main() {
 	h := handler.Handler{}
 	http.Handle("/hello", h.HandleHello())
-	log.Print("this is a log")
+	log.Print("this is a log 1")
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }

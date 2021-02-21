@@ -22,7 +22,8 @@ jobs:
 
     - name: Build
       working-directory: $({push.path})
-      run: go build -v ./...
+      run: echo $({push.path})
+      # run: go build -v ./...
 
     - name: Test
       run: go test -v ./...
