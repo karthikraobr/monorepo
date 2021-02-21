@@ -2,6 +2,8 @@ name: Go
 
 on:
   push:
+    paths:
+      - "app/server"
     branches: [ main ]
   pull_request:
     branches: [ main ]
